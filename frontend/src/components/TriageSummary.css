@@ -1,0 +1,83 @@
+.triage-summary {
+  margin: 20px;
+  border: 2px solid;
+  border-radius: 12px;
+  overflow: hidden;
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.triage-header {
+  padding: 15px 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.triage-icon {
+  font-size: 1.5rem;
+}
+
+.triage-content {
+  padding: 20px;
+  background: white;
+}
+
+.triage-content h3 {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.triage-content p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.triage-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.triage-content li {
+  padding: 8px 0;
+  padding-left: 25px;
+  position: relative;
+  color: #666;
+  line-height: 1.6;
+}
+
+.triage-content li:before {
+  content: "•";
+  position: absolute;
+  left: 10px;
+  color: #667eea;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.escalate-warning {
+  margin-top: 15px;
+  padding: 12px;
+  background: #fff3cd;
+  border: 1px solid #ffc107;
+  border-radius: 8px;
+  color: #856404;
+  font-weight: 500;
+}
+
